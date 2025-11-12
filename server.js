@@ -1,20 +1,20 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
-app.use(express.static(path.join(__dirname)));
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views/main.html'));
+  res.sendFile(path.join(__dirname, 'public/main.html'));
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views/news.html'));
+  res.sendFile(path.join(__dirname, 'public/news.html'));
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views/team.html'));
+  res.sendFile(path.join(__dirname, 'public/team.html'));
 });
 
 app.listen(PORT, () => {
