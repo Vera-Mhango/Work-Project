@@ -1,0 +1,16 @@
+{
+  "name": "work-project",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+  "start": "node server.js",
+  "dev": "node server.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
