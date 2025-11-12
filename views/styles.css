@@ -269,7 +269,7 @@ body {
 
 /*ABOUT US SECTION - START*/
 .about-section {
-  padding: 7rem 5%;
+  padding: 3rem 5%;
   background: f5f9ff;
   text-align: left;
 }
@@ -311,6 +311,50 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
+}
+
+/* MOBILE: ABOUT SECTION — STACKED & GORGEOUS */
+@media (max-width: 968px) {
+  .about-section {
+    padding: 4rem 5%;
+    text-align: center;
+    background: #f5f9ff;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .about-title h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.15);
+  }
+
+  .about-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .about-text p {
+    margin-bottom: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title h2 {
+    font-size: 2.3rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-section {
+    padding: 3rem 5%;
+  }
 }
 /*ABOUT US SECTION - END*/
 
